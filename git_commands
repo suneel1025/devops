@@ -1,0 +1,42 @@
+
+In Git three phases 
+-->Work place area. -- Red Colour -- un tracked
+-->Index area/staging -- Green
+-->Local repo
+---> git log
+
+git status
+git init
+git config --global user.name "suneel"
+git config --global user.email
+
+creat one file
+git add file_name -->{ moving_file work place area to Index area}
+
+$ git config --list
+
+$ git show commit Id
+
+git add . or * -A(Multile files)-->[workspace to indexarea]
+git commit -m "lable" file_name(single file commit to localrepo)-->[indexarea to localrepository]
+git rest --soft cid
+
+git rest head file_name
+git rest --mixed cid
+
+gig log
+gig log --oneline
+git log -n 2
+git log --oneline -4
+git log --author=suneel
+git log author=suneel --oneline -3
+git log --since=yyyy-mm-dd
+git log --until=yyyy-mm-dd
+
+$ git reset head j1(file_name) indexarea/staging to workspace area
+$ git reset --soft bcd9abf648e86528a6ce7c040480bfb431a6994f(shawcode/commit id) localrepository to indexarea/staging)
+$ git reset --mixed bcd9abf648e86528a6ce7c040480bfb431a6994f(localrepository to workspace)
+git branch
+git branch branch-name
+$ git checkout master-1
+$ git checkout -b branch-name 
